@@ -1,0 +1,56 @@
+@if(portfolioItem){
+<div
+  class="d-flex portfolio-item__wrapper pb-2"
+  [ngClass]="index && index > 0 ? 'mt-4' : ''"
+  (click)="openPortfolioItemCarousel(portfolioItem)"
+>
+  <div
+    class="portfolio-item__image"
+    [ngClass]="
+      index && (index + 1) % 2 === 0
+        ? 'portfolio-item__image-order1 ml-2'
+        : 'portfolio-item__image-order0 mr-2'
+    "
+  >
+    <img
+      src="assets/images/portfolio/{{ portfolioItem.images[0] }}"
+      alt="A portfolio item image"
+    />
+  </div>
+  <div class="d-flex flex-column portfolio-item__content">
+    <h4 class="mat-headline-4 mb-2">
+      {{ portfolioItem.title[currentLang] }}
+    </h4>
+    <p class="mat-body-1">
+      {{ portfolioItem.description[currentLang] }}
+    </p>
+    <div class="portfolio-item__stack mt-2">
+      @for (stack of portfolioItem.stack; track $index) {
+      <app-portfolio-item-stack [portfolioItemStack]="stack" />
+      }
+    </div>
+  </div>
+</div>
+
+<div
+  *ngIf="openCarousel && selectedItem"
+  class="carousel-overlay"
+  (click)="closeCarousel()"
+>
+  <div class="carousel" (click)="$event.stopPropagation()">
+    <img
+      src="assets/images/portfolio/{{ selectedItem.images[currentImageIndex] }}"
+      alt="Current carousel image"
+    />
+    <button (click)="previousImage()">Previous</button>
+    <button (click)="nextImage()">Next</button>
+    <button class="close-button" (click)="closeCarousel()">Close</button>
+    <div class="dots">
+      <span
+        *ngFor="let image of selectedItem.images; let i = index"
+        [class.active]="i === currentImageIndex"
+      ></span>
+    </div>
+  </div>
+</div>
+}

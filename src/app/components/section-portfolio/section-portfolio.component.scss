@@ -1,0 +1,9 @@
+.section-portfolio {
+  @media screen and (min-width: 960px) {
+    min-height: calc(100vh - 110px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 10em;
+  }
+}

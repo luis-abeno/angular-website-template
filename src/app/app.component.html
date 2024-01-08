@@ -1,0 +1,14 @@
+<main>
+  <app-navbar />
+  <app-section-banner />
+  <app-section-about />
+  <app-section-portfolio />
+  <app-section-contact />
+  @if(showBackTop){
+  <div class="back-top" (click)="backTop()">
+    <mat-icon class="mat-icon material-icons" role="img" aria-hidden="true">
+      arrow_upward
+    </mat-icon>
+  </div>
+  }
+</main>

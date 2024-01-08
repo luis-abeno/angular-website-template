@@ -1,0 +1,96 @@
+<section class="section-about" #about id="about">
+  @if(visibility !== 'hidden'){
+  <div class="container d-flex flex-column">
+    <h2 class="my-2 mat-headline-2 section-title">{{ "about" | translate }}</h2>
+
+    <div
+      class="content mb-6 mt-4"
+      fxLayout="row"
+      fxLayout.xs="column"
+      fxLayout.sm="column"
+      fxLayoutAlign="space-around center"
+    >
+      <div
+        fxFlex="40"
+        fxLayoutAlign.xs="center"
+        fxLayoutAlign.md="start"
+        class="polygon__container"
+      >
+        <div class="polygon__object"></div>
+      </div>
+      <div fxFlex="60" fxFlex.xs="55">
+        <h4 class="section-about__title mat-headline-4">
+          {{ "aboutTitle" | translate }}
+        </h4>
+        <p class="section-about__text mat-body-1">
+          {{ "aboutTextParagraph01" | translate }}
+        </p>
+        <p class="section-about__text mat-body-1">
+          {{ "aboutTextParagraph02" | translate }}
+        </p>
+        <p class="section-about__text mat-body-1">
+          {{ "aboutTextParagraph03" | translate }}
+        </p>
+      </div>
+    </div>
+
+    <div class="wider-child py-2 section-about__metrics-container">
+      <div class="container">
+        <div
+          class="content section-about__metrics"
+          fxLayout="row"
+          fxLayout.xs="column"
+          fxLayout.sm="column"
+          fxLayoutAlign="space-between center"
+        >
+          <div
+            fxFlex="33"
+            fxFlex.xs="100"
+            class="section-about__metric d-flex flex-column text-center align-center"
+          >
+            <span class="mat-icon material-icons material-symbols-outlined">
+              tactic
+            </span>
+            <h6 class="mat-headline-6">{{ "wePlan" | translate }}</h6>
+            <p class="mat-body-1">
+              {{ "wePlanText" | translate }}
+            </p>
+          </div>
+          <div
+            fxFlex="33"
+            fxFlex.xs="100"
+            class="section-about__metric d-flex flex-column text-center align-center"
+          >
+            <mat-icon
+              class="mat-icon material-icons"
+              role="img"
+              aria-hidden="true"
+              >code</mat-icon
+            >
+            <h6 class="mat-headline-6">{{ "weCode" | translate }}</h6>
+            <p class="mat-body-1">
+              {{ "weCodeText" | translate }}
+            </p>
+          </div>
+          <div
+            fxFlex="33"
+            fxFlex.xs="100"
+            class="section-about__metric d-flex flex-column text-center align-center"
+          >
+            <mat-icon
+              class="mat-icon material-icons"
+              role="img"
+              aria-hidden="true"
+              >rocket_launch</mat-icon
+            >
+            <h6 class="mat-headline-6">{{ "weLaunch" | translate }}</h6>
+            <p class="mat-body-1">
+              {{ "weLaunchText" | translate }}
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  }
+</section>

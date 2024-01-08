@@ -1,0 +1,116 @@
+// https://material.angular.io/guide/typography
+@use "@angular/material" as mat;
+
+$lato-font-family: "Lato" !default;
+
+$headline1-typography: mat.define-typography-level(
+  6rem,
+  1.4,
+  300,
+  $lato-font-family,
+  0
+);
+
+$headline2-typography: mat.define-typography-level(
+  3.75rem,
+  1.4,
+  300,
+  $lato-font-family,
+  0
+);
+
+$headline3-typography: mat.define-typography-level(
+  3rem,
+  1.4,
+  300,
+  $lato-font-family,
+  0
+);
+
+$headline4-typography: mat.define-typography-level(
+  2.125rem,
+  1.4,
+  300,
+  $lato-font-family,
+  0
+);
+
+$headline5-typography: mat.define-typography-level(
+  1.5rem,
+  1.4,
+  300,
+  $lato-font-family,
+  0
+);
+
+$headline6-typography: mat.define-typography-level(
+  1.25rem,
+  1.4,
+  300,
+  $lato-font-family,
+  0
+);
+
+$subtitle1-typography: mat.define-typography-level(
+  1rem,
+  1.4,
+  300,
+  $lato-font-family,
+  0
+);
+
+$subtitle2-typography: mat.define-typography-level(
+  0.875rem,
+  1.4,
+  300,
+  $lato-font-family,
+  0
+);
+
+$body1-typography: mat.define-typography-level(
+  1rem,
+  1.4,
+  300,
+  $lato-font-family,
+  0
+);
+
+$body2-typography: mat.define-typography-level(
+  0.875rem,
+  1.4,
+  300,
+  $lato-font-family,
+  0
+);
+
+$caption-typography: mat.define-typography-level(
+  0.75rem,
+  1.4,
+  300,
+  $lato-font-family,
+  0
+);
+
+$button-typography: mat.define-typography-level(
+  0.875rem,
+  1.4,
+  300,
+  $lato-font-family,
+  0
+);
+
+$typography-config: mat.define-typography-config(
+  $font-family: $lato-font-family,
+  $headline-1: $headline1-typography,
+  $headline-2: $headline2-typography,
+  $headline-3: $headline3-typography,
+  $headline-4: $headline4-typography,
+  $headline-5: $headline5-typography,
+  $headline-6: $headline6-typography,
+  $subtitle-1: $subtitle1-typography,
+  $subtitle-2: $subtitle2-typography,
+  $body-1: $body1-typography,
+  $body-2: $body2-typography,
+  $caption: $caption-typography,
+  $button: $button-typography,
+);

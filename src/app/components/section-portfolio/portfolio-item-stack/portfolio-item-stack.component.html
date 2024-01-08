@@ -1,0 +1,15 @@
+@if(portfolioItemStackData){ @if(portfolioItemStackData.source !== 'material') {
+<i
+  [class]="portfolioItemStackData.icon"
+  [title]="portfolioItemStackData.title"
+  [style]="{ color: portfolioItemStackData.color }"
+></i
+>} @else {
+<span
+  class="material-symbols-outlined"
+  [title]="portfolioItemStackData.title"
+  [style]="{ color: portfolioItemStackData.color }"
+>
+  {{ portfolioItemStackData.icon }}
+</span>
+} }

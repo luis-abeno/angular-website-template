@@ -1,0 +1,37 @@
+@use "@angular/material" as mat;
+@include mat.core();
+
+@import "./dark/theme-dark.scss";
+@import "./light/theme-light.scss";
+@import "./typography.scss";
+@import "./mixings/margins.scss";
+@import "./mixings/paddings.scss";
+
+@include mat.typography-hierarchy($typography-config);
+
+// Generate CSS variables base on theme mode
+@mixin generate-variables($prefix, $palette) {
+  @each $key, $value in $palette {
+    @if $key !=contrast {
+      --app-#{$prefix}-#{$key}: #{$value};
+    }
+  }
+}
+
+.light-theme {
+  @include mat.core-theme($light-theme);
+  @include mat.button-theme($light-theme);
+  @include generate-variables(primary, $light-primary);
+  @include generate-variables(foreground, $light-foreground);
+  @include generate-variables(palette, $light-colors);
+  transition: background-color 1s cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+
+.dark-theme {
+  @include mat.core-theme($dark-theme);
+  @include mat.button-theme($dark-theme);
+  @include generate-variables(primary, $dark-primary);
+  @include generate-variables(foreground, $dark-foreground);
+  @include generate-variables(palette, $dark-colors);
+  transition: background-color 1s cubic-bezier(0.25, 0.1, 0.25, 1);
+}

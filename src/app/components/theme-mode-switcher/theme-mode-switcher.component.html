@@ -1,0 +1,15 @@
+<div class="theme-mode-switcher">
+  <button
+    mat-icon-button
+    aria-label="An icon that represents dark or light mode depending on the current theme"
+    (click)="toggleTheme()"
+  >
+    <span class="material-symbols-outlined">
+      @if(currentTheme === 'light') {
+      <mat-icon fontIcon="dark_mode"></mat-icon>
+      } @else {
+      <mat-icon fontIcon="light_mode"></mat-icon>
+      }
+    </span>
+  </button>
+</div>

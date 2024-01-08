@@ -1,0 +1,101 @@
+@use "@angular/material" as mat;
+
+// Define a custom light primary palette
+$light-primary: mat.define-palette(
+  (
+    50: #e8eaf6,
+    100: #c5cae9,
+    200: #9fa8da,
+    300: #7986cb,
+    400: #5c6bc0,
+    500: #3f51b5,
+    600: #3949ab,
+    700: #303f9f,
+    800: #283593,
+    900: #1a237e,
+    A100: #8c9eff,
+    A200: #536dfe,
+    A400: #3d5afe,
+    A700: #304ffe,
+    contrast: (
+      50: #000000,
+      100: #000000,
+      200: #000000,
+      300: #ffffff,
+      400: #ffffff,
+      500: #ffffff,
+      600: #ffffff,
+      700: #ffffff,
+      800: #ffffff,
+      900: #ffffff,
+      A100: #000000,
+      A200: #000000,
+      A400: #ffffff,
+      A700: #ffffff,
+    ),
+  )
+);
+
+// Define a custom light accent palette
+$light-accent: mat.define-palette(
+  (
+    50: #3f51b5,
+    100: #3949ab,
+    200: #303f9f,
+    300: #283593,
+    400: #1a237e,
+    500: #8c9eff,
+    600: #536dfe,
+    700: #3d5afe,
+    800: #304ffe,
+    900: #283593,
+    A100: #1a237e,
+    A200: #8c9eff,
+    A400: #536dfe,
+    A700: #3d5afe,
+    contrast: (
+      50: #ffffff,
+      100: #ffffff,
+      200: #ffffff,
+      300: #ffffff,
+      400: #ffffff,
+      500: #000000,
+      600: #000000,
+      700: #ffffff,
+      800: #ffffff,
+      900: #ffffff,
+      A100: #ffffff,
+      A200: #000000,
+      A400: #000000,
+      A700: #ffffff,
+    ),
+  )
+);
+
+$light-foreground: (
+  base: rgba(0, 0, 0, 0.5),
+  divider: rgba(0, 0, 0, 0.12),
+  dividers: rgba(0, 0, 0, 0.12),
+  disabled: rgba(0, 0, 0, 0.38),
+  disabled-button: rgba(0, 0, 0, 0.38),
+  disabled-text: rgba(0, 0, 0, 0.38),
+  elevation: black,
+  hint-text: rgba(0, 0, 0, 0.38),
+  secondary-text: rgba(0, 0, 0, 0.54),
+  icon: rgba(0, 0, 0, 0.54),
+  icons: rgba(0, 0, 0, 0.54),
+  text: rgba(0, 0, 0, 0.87),
+);
+
+$light-colors: (
+  surface: #f7f7f7,
+  onSurface: #000000,
+  background: #f1f1f1,
+  onBackground: #000000,
+  primary: #3f51b5,
+  onPrimary: #ffffff,
+  accent: #6a3fb5,
+  onAccent: #ffffff,
+  warn: #f44336,
+  onWarn: #ffffff,
+);

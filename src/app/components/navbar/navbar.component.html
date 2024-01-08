@@ -1,0 +1,40 @@
+<nav class="navbar" id="navbar">
+  <div class="hamburger-menu" (click)="toggleMenu()">
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+  <div></div>
+  <ul [class.active]="menuActive">
+    @if(menuActive){
+    <li class="hamburger-menu__close">
+      <button
+        mat-icon-button
+        aria-label="An icon that close the mobile menu"
+        (click)="toggleMenu()"
+      >
+        <mat-icon
+          fontIcon="close"
+          class="hamburger-menu__close-icon"
+        ></mat-icon>
+      </button>
+    </li>
+    }
+    <li class="navbar__theme-mode-switcher">
+      <app-theme-mode-switcher />
+    </li>
+    @for (section of sections; track $index) { @if(section.id !== 'banner'){
+    <li>
+      <a
+        href="#{{ section.id }}"
+        class="mat-body-1"
+        [class.active-section]="section.id === activeSection"
+        >{{ section.name | translate }}</a
+      >
+    </li>
+    } }
+    <li>
+      <app-language-switcher />
+    </li>
+  </ul>
+</nav>

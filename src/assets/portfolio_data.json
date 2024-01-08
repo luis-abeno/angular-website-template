@@ -1,0 +1,274 @@
+[
+    {
+        "title": {
+            "pt": "Baden Baden - Promoção: \"Campos Como Nunca\"",
+            "en": "Baden Baden - Campaign: \"Campos Como Nunca\""
+        },
+        "description": {
+            "pt": "Campanha de inverno \"Campos Como Nunca\", desenvolvida para a empresa Baden Baden.\nO hotsite recebeu milhares de acessos e conta com uma área administrativa para acompanhamento dos cadastros e participações.",
+            "en": "Winter campaign \"Campos Como Nunca\", developed for the Baden Baden company. The campaign's microsite received thousands of visits and features an administrative area for monitoring registrations and participation"
+        },
+        "stack": [
+            "vue",
+            "php",
+            "sql",
+            "html",
+            "css",
+            "sass",
+            "javascript"
+        ],
+        "images": [
+            "baden-baden/01.png",
+            "baden-baden/02.png",
+            "baden-baden/03.png",
+            "baden-baden/04.png",
+            "baden-baden/05.png",
+            "baden-baden/06.png",
+            "baden-baden/07.png",
+            "baden-baden/08.png",
+            "baden-baden/09.png",
+            "baden-baden/10.png",
+            "baden-baden/11.png",
+            "baden-baden/12.png",
+            "baden-baden/13.png",
+            "baden-baden/14.png"
+        ]
+    },
+    {
+        "title": {
+            "pt": "Health Trackr",
+            "en": "Health Trackr"
+        },
+        "description": {
+            "pt": "Plataforma SaaS para incentivar a saúde e bem estar dos colaboradores nas empresas.\nO sistema conta com uma área administrativa para gestão de usuários, tags, prêmios, etc.\nOs usuários podem acompanhar seu histórico de saúde, pontuação, solicitar treinos, e muito mais!",
+            "en": "SaaS platform to encourage health and well-being of employees in companies.\nThe system features an administrative area for user management, tags, awards, etc.\nUsers can track their health history, score, request training, and more!"
+        },
+        "stack": [
+            "flutter",
+            "nodejs",
+            "mongodb"
+        ],
+        "images": [
+            "health-trackr/01.png",
+            "health-trackr/02.png",
+            "health-trackr/03.png",
+            "health-trackr/04.png",
+            "health-trackr/05.png",
+            "health-trackr/06.png",
+            "health-trackr/07.png",
+            "health-trackr/08.png",
+            "health-trackr/09.png",
+            "health-trackr/10.png",
+            "health-trackr/11.png",
+            "health-trackr/12.png"
+        ]
+    },
+    {
+        "title": {
+            "pt": "Competence Mapping",
+            "en": "Competence Mapping"
+        },
+        "description": {
+            "pt": "Plataforma SaaS para mapeamento de competências, avaliação de desempenho e PDI dos colaboradores.\nO sistema conta com uma área administrativa para gestão de usuários, competências, avaliações, etc.\nAtravés de avaliações criadas pelos gestores ou administradores, os colaboradores podem acompanhar seu desempenho, já os gestores podem acompanhar o desempenho da sua equipe e criar planos de desenvolvimento para seus colaboradores.",
+            "en": "SaaS platform for competence mapping, performance evaluation and PDI of employees.\nThe system features an administrative area for user management, skills, evaluations, etc.\nThrough evaluations created by managers or administrators, employees can track their performance, while managers can track the performance of their team and create development plans for their employees."
+        },
+        "stack": [
+            "react",
+            "mongodb",
+            "nodejs"
+        ],
+        "images": [
+            "competence-mapping/01.png",
+            "competence-mapping/02.png",
+            "competence-mapping/03.png",
+            "competence-mapping/04.png",
+            "competence-mapping/05.png",
+            "competence-mapping/06.png",
+            "competence-mapping/07.png",
+            "competence-mapping/08.png",
+            "competence-mapping/09.png",
+            "competence-mapping/10.png",
+            "competence-mapping/11.png",
+            "competence-mapping/12.png",
+            "competence-mapping/13.png",
+            "competence-mapping/14.png",
+            "competence-mapping/15.png",
+            "competence-mapping/16.png",
+            "competence-mapping/17.png",
+            "competence-mapping/18.png",
+            "competence-mapping/19.png",
+            "competence-mapping/20.png"
+        ]
+    },
+    {
+        "title": {
+            "pt": "Mercado Pago - Promoção \"Sua Mão Premiada\"",
+            "en": "Mercado Pago - Capaign \"Sua Mão Premiada\""
+        },
+        "description": {
+            "pt": "Front-end desenvolvido para a campanha da promoção \"Sua Mão Premiada\" do Mercado Pago.\nO hotsite recebeu milhares de acessos e conta com uma área administrativa para acompanhamento dos cadastros e participações.",
+            "en": "Front-end developed for the campaign of the \"Sua Mão Premiada\" promotion of Mercado Pago.\nThe website received thousands of visits and features an administrative area for monitoring registrations and participation."
+        },
+        "stack": [
+            "vue",
+            "sql"
+        ],
+        "images": [
+            "mercado-pago/01.png",
+            "mercado-pago/02.png",
+            "mercado-pago/03.png",
+            "mercado-pago/04.png",
+            "mercado-pago/05.png",
+            "mercado-pago/06.png",
+            "mercado-pago/07.png",
+            "mercado-pago/08.png",
+            "mercado-pago/09.png"
+        ]
+    },
+    {
+        "title": {
+            "pt": "Hotelaria Brasil - Extranet",
+            "en": "Hotelaria Brasil - Extranet"
+        },
+        "description": {
+            "pt": "Suporte, manutenção e desenvolvimento de novas funcionalidades para a extranet da empresa Hotelaria Brasil.\nA extranet é utilizada pelos hotéis para gerenciamento de documentos, procedimentos, vagas, perguntas frequentes etc.",
+            "en": "Support, maintenance and development of new features for the extranet of the company Hotelaria Brasil.\nThe extranet is used by hotels for document management, procedures, vacancies, frequently asked questions etc."
+        },
+        "stack": [
+            "react",
+            "php",
+            "sql"
+        ],
+        "images": [
+            "hb-extranet/01.png",
+            "hb-extranet/02.png",
+            "hb-extranet/03.png",
+            "hb-extranet/04.png",
+            "hb-extranet/05.png",
+            "hb-extranet/06.png",
+            "hb-extranet/07.png"
+        ]
+    },
+    {
+        "title": {
+            "pt": "Hotelaria Brasil - Institucional",
+            "en": "Hotelaria Brasil - Institutional"
+        },
+        "description": {
+            "pt": "Suporte, manutenção e desenvolvimento de novas funcionalidades para o site institucional da empresa Hotelaria Brasil.\nO site conta com uma área administrativa para gestão de conteúdo.",
+            "en": "Support, maintenance and development of new features for the institutional website of the company Hotelaria Brasil.\nThe website features an administrative area for content management."
+        },
+        "stack": [
+            "angular",
+            "php",
+            "sql"
+        ],
+        "images": [
+            "hb-institutional/01.png",
+            "hb-institutional/02.png",
+            "hb-institutional/03.png",
+            "hb-institutional/04.png",
+            "hb-institutional/05.png",
+            "hb-institutional/06.png",
+            "hb-institutional/07.png"
+        ]
+    },
+    {
+        "title": {
+            "pt": "Engemon - Institucional",
+            "en": "Engemon - Institutional"
+        },
+        "description": {
+            "pt": "Desenvolvimento de website institucional e blog para a empresa Engemon.\nO site conta com uma área administrativa para gestão de conteúdo (Wordpress CMS).",
+            "en": "Development of institutional website and blog for the company Engemon.\nThe website features an administrative area for content management (Wordpress CMS)."
+        },
+        "stack": [
+            "wordpress",
+            "php",
+            "sql"
+        ],
+        "images": [
+            "engemon/01.png",
+            "engemon/02.png",
+            "engemon/03.png",
+            "engemon/04.png",
+            "engemon/05.png",
+            "engemon/06.png",
+            "engemon/07.png",
+            "engemon/08.png",
+            "engemon/09.png",
+            "engemon/10.png",
+            "engemon/11.png",
+            "engemon/12.png",
+            "engemon/13.png",
+            "engemon/14.png",
+            "engemon/15.png",
+            "engemon/16.png",
+            "engemon/17.png",
+            "engemon/18.png",
+            "engemon/19.png"
+        ]
+    },
+    {
+        "title": {
+            "pt": "SKF na Medida",
+            "en": "SKF na Medida"
+        },
+        "description": {
+            "pt": "Web app desenvolvido para a empresa SKF.\nO intuito da aplicação é promover os cuidados com a saúde física e mental dos colaboradores.\nA aplicação conta com uma área administrativa para gestão de usuários, tags, prêmios, rankings, etc.",
+            "en": "Web app developed for the company SKF.\nThe purpose of the application is to promote physical and mental health care for employees.\nThe application features an administrative area for user management, tags, awards, rankings, etc."
+        },
+        "stack": [
+            "angular",
+            "nodejs",
+            "sql"
+        ],
+        "images": [
+            "skf-na-medida/01.png",
+            "skf-na-medida/02.png",
+            "skf-na-medida/03.png",
+            "skf-na-medida/04.png",
+            "skf-na-medida/05.png",
+            "skf-na-medida/06.png",
+            "skf-na-medida/07.png",
+            "skf-na-medida/08.png",
+            "skf-na-medida/09.png"
+        ]
+    },
+    {
+        "title": {
+            "pt": "Meta - Gerador de assinaturas",
+            "en": "Meta - Signature generator"
+        },
+        "description": {
+            "pt": "Web app desenvolvido para a empresa Meta.\nO intuito da aplicação é de facilitar a criação e utilização de assinaturas.",
+            "en": "Web app developed for the company Meta.\nThe purpose of the application is to facilitate the creation and use of signatures."
+        },
+        "stack": [
+            "vue"
+        ],
+        "images": [
+            "meta-signature-generator/01.png",
+            "meta-signature-generator/02.png"
+        ]
+    },
+    {
+        "title": {
+            "pt": "Meta - Gerador de post comemorativo",
+            "en": "Meta - Celebratory post generator"
+        },
+        "description": {
+            "pt": "Web app desenvolvido para a empresa Meta.\nO intuito da aplicação criar posts comemorativos para as redes sociais através de templates",
+            "en": "Web app developed for the company Meta.\nThe purpose of the application is to create celebratory posts for social networks through templates."
+        },
+        "stack": [
+            "flutter"
+        ],
+        "images": [
+            "meta-celebratory-post-generator/01.png",
+            "meta-celebratory-post-generator/02.png",
+            "meta-celebratory-post-generator/03.png",
+            "meta-celebratory-post-generator/04.png"
+        ]
+    }
+]

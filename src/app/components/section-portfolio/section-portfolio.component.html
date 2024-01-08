@@ -1,0 +1,40 @@
+<section class="section-portfolio" #portfolio id="portfolio">
+  @if(visibility !== 'hidden'){
+  <div class="container">
+    <h2 class="my-2 mat-headline-2 section-title">Portfolio</h2>
+
+    <p class="mat-body-1 text-right">
+      {{ portfolioItems.length }} {{ "of" | translate }} {{ totalItems }}
+      {{ "amazingProjects" | translate }}
+    </p>
+
+    @for (item of portfolioItems; track $index) { @defer{
+    <app-portfolio-item
+      [portfolioItem]="item"
+      [index]="$index"
+      [@scrollAnimation]="{ value: state, params: { delay: $index * 1000 } }"
+    />
+    } @placeholder (minimum 500ms) {
+    <p class="mat-body-1">
+      {{ "loading" | translate }}
+    </p>
+    } @error { {{ "errorMessage" | translate }} } } @empty {
+    {{ "noDataFound" | translate }} }
+
+    <!-- Load more button -->
+    <div
+      class="d-flex justify-center my-4"
+      *ngIf="portfolioItems.length > 0 && portfolioItems.length < totalItems"
+    >
+      <button
+        mat-raised-button
+        color="primary"
+        class="mat-button mat-primary"
+        (click)="loadMore()"
+      >
+        {{ "loadMore" | translate }}
+      </button>
+    </div>
+  </div>
+  }
+</section>

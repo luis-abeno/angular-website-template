@@ -1,0 +1,123 @@
+.section-banner {
+  display: flex;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+
+  .wave {
+    display: none;
+  }
+
+  .section-banner__title {
+    margin: 1em 0 1em 0;
+    text-align: center;
+  }
+
+  .section-banner__text {
+    margin: 0 0 1em 0;
+    text-align: center;
+  }
+
+  .section-banner__logo {
+    animation: spin-grow 4s ease-in-out forwards;
+    margin-top: 2em;
+  }
+
+  @keyframes fromTop {
+    0% {
+      transform: translateY(-100%) rotate(0deg);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0) rotate(360deg);
+      opacity: 1;
+    }
+  }
+
+  @keyframes fromRight {
+    0% {
+      transform: translateX(100%) rotate(0deg);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0) rotate(360deg);
+      opacity: 1;
+    }
+  }
+
+  .section-banner__image {
+    width: 150px;
+  }
+
+  .image-from-top {
+    animation: fromTop 2s ease-out;
+  }
+
+  .image-from-right {
+    animation: fromRight 2s ease-out;
+  }
+
+  @media screen and (min-width: 960px) {
+    height: calc(100vh - 110px);
+
+    .section-banner__image {
+      width: 220px;
+    }
+
+    h2 {
+      margin: initial !important;
+    }
+
+    .wave {
+      display: block;
+      position: absolute;
+      bottom: 0;
+      width: 120%;
+      height: auto;
+      left: -10%;
+    }
+
+    .upper-wave {
+      fill: var(--app-palette-accent);
+      animation: wave 5s infinite linear;
+    }
+
+    .lower-wave {
+      fill: var(--app-palette-background);
+    }
+
+    @keyframes wave {
+      0% {
+        transform: translateX(0) skewX(-15deg);
+      }
+      25% {
+        transform: translateX(30px) translateY(10px) skewX(-15deg);
+      }
+      50% {
+        transform: translateX(60px) skewX(-15deg);
+      }
+      75% {
+        transform: translateX(30px) translateY(-10px) skewX(-15deg);
+      }
+      100% {
+        transform: translateX(0) skewX(-15deg);
+      }
+    }
+
+    .section-banner__title,
+    .section-banner__text {
+      margin: 1em 0 1em 0;
+      text-align: initial;
+    }
+
+    .section-banner__polygon {
+      margin-top: initial;
+    }
+  }
+
+  @media screen and (min-width: 1920px) {
+    .section-banner__image {
+      width: 320px;
+    }
+  }
+}

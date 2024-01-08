@@ -1,0 +1,17 @@
+<div class="language-switcher">
+  <img
+    [src]="getFlagSrc(currentLanguage)"
+    (click)="showOptions = !showOptions"
+  />
+
+  <div class="language-options" *ngIf="showOptions">
+    <div class="language-option" (click)="switchLanguage('en')">
+      <img src="../../../assets/images/flag_united_states.png" alt="English" />
+      <span>EN</span>
+    </div>
+    <div class="language-option mt-1" (click)="switchLanguage('pt')">
+      <img src="../../../assets/images/flag_brazil.png" alt="Português" />
+      <span>PT</span>
+    </div>
+  </div>
+</div>

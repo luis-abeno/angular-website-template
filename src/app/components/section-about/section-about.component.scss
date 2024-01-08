@@ -1,0 +1,140 @@
+.section-about {
+  @keyframes opacity-polygon {
+    0% {
+      width: 320px;
+      height: 320px;
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  .polygon__container {
+    filter: drop-shadow(0px 10px 10px var(--app-palette-onSurface));
+  }
+
+  .section-about__title {
+    margin: 1em 0 1em 0;
+    text-align: center;
+  }
+
+  .section-about__text {
+    margin: 0 0 1em 0;
+    text-align: center;
+  }
+
+  .polygon__object {
+    width: 320px;
+    height: 320px;
+    clip-path: polygon(31% 0, 100% 23%, 100% 66%, 49% 100%, 23% 100%, 0% 50%);
+    animation: opacity-polygon 4s ease-in-out forwards;
+    margin-top: 2em;
+  }
+
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  @keyframes slide-in-left {
+    from {
+      transform: translateX(-100px);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+
+  @keyframes slide-in-right {
+    from {
+      transform: translateX(100px);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+
+  .section-about__metrics-container {
+    background-color: var(--app-palette-surface);
+    .section-about__metrics {
+      .section-about__metric {
+        min-height: 210px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        opacity: 0;
+
+        h6 {
+          margin: initial;
+        }
+
+        &:nth-child(1) {
+          animation: fade-in 0.5s ease-in-out 0.5s forwards,
+            slide-in-left 0.5s ease-in-out 0.5s forwards;
+          .material-icons {
+            color: var(--app-palette-primary);
+          }
+        }
+
+        &:nth-child(2) {
+          animation: fade-in 0.5s ease-in-out 1s forwards,
+            slide-in-bottom 0.5s ease-in-out 1s forwards;
+          .material-icons {
+            color: var(--app-palette-accent);
+          }
+        }
+
+        &:nth-child(3) {
+          animation: fade-in 0.5s ease-in-out 1.5s forwards,
+            slide-in-right 0.5s ease-in-out 1.5s forwards;
+          .material-icons {
+            color: var(--app-palette-warn);
+          }
+        }
+
+        p {
+          max-width: 260px;
+          margin: initial;
+          min-height: 110px;
+        }
+      }
+
+      .material-icons {
+        font-size: 4em;
+        height: initial;
+        width: initial;
+      }
+    }
+  }
+
+  @media screen and (min-width: 960px) {
+    .container {
+      height: 100%;
+    }
+
+    .section-about__metric {
+      display: flex;
+      justify-content: center;
+    }
+
+    .section-about__title,
+    .section-about__text {
+      margin: 0 0 1em 0;
+      text-align: initial;
+    }
+
+    .polygon__object {
+      margin-top: initial;
+      background-image: url("/assets/images/digital-rain.gif");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+  }
+}

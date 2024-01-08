@@ -1,0 +1,48 @@
+<div class="parallax-container">
+  <section class="section-contact pt-4" #contact id="contact">
+    <div class="container d-flex flex-column">
+      <h2 class="my-2 mat-headline-2 section-title">
+        {{ "contact" | translate }}
+      </h2>
+
+      <div class="section-contact__item">
+        <mat-icon
+          class="mat-icon material-icons mr-2"
+          role="img"
+          aria-hidden="true"
+          >schedule</mat-icon
+        >
+        <h6 class="mat-headline-6">{{ "workTime" | translate }}</h6>
+      </div>
+
+      <div class="section-contact__item mt-1">
+        <mat-icon
+          class="mat-icon material-icons mr-2"
+          role="img"
+          aria-hidden="true"
+          >mail</mat-icon
+        >
+        <h6 class="mat-headline-6">contato&#64;loremipsum.com.br</h6>
+      </div>
+
+      <div class="section-contact__item mt-1">
+        <div class="mapouter">
+          <div class="gmap_canvas">
+            <iframe
+              id="gmap_canvas"
+              src="https://maps.google.com/maps?q=AV.+Reynaldo+Porcary%2C+2460&t=&z=13&ie=UTF8&iwloc=&output=embed"
+              frameborder="0"
+              scrolling="no"
+              marginheight="0"
+              marginwidth="0"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+
+      <div class="section-contact__item">
+        <p class="mat-body-1">&#169; {{ "copyRights" | translate }}</p>
+      </div>
+    </div>
+  </section>
+</div>

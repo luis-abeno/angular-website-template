@@ -1,0 +1,62 @@
+.parallax-container {
+  position: relative;
+  width: 100%;
+  height: calc(100vh - 110px);
+  background: transparent;
+  margin-top: -50px;
+}
+
+.section-contact {
+  background: var(--app-palette-surface) !important;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform: translateY(100%);
+  transition: transform 0.3s;
+
+  .container {
+    height: 100%;
+  }
+
+  .section-contact__item:last-child {
+    margin-top: auto;
+    width: 100vw;
+    position: relative;
+    left: calc(-50vw + 49%);
+    background-color: var(--app-palette-background);
+    justify-content: flex-end;
+    padding: 1em 0;
+
+    p {
+      margin: initial;
+      margin-right: 1em;
+    }
+  }
+
+  .section-contact__item {
+    display: flex;
+  }
+}
+
+.mapouter {
+  position: relative;
+  text-align: right;
+}
+
+.gmap_canvas {
+  overflow: hidden;
+  background: none !important;
+  iframe {
+    width: 500px;
+    height: 250px;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .gmap_canvas {
+    iframe {
+      width: 800px;
+      height: 400px;
+    }
+  }
+}
